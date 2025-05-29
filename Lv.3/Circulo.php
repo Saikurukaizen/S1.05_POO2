@@ -9,7 +9,7 @@ class Circulo implements Shape{
     }
 
     public function calcularArea(): float{
-        return pi() * ($this->r * 2);
+        return pi() * pow($this->r, 2);
     }
 }
 
