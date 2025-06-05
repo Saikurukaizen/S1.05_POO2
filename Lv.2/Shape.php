@@ -1,8 +1,17 @@
 <?php
 declare(strict_types=1);
 
-interface Shape{
-    public function calcularArea(): float;
+abstract class Shape{
+
+    protected float $base;
+    protected float $altura;
+
+    public function __construct(float $base, float $altura){
+        $this->base = $base;
+        $this->altura = $altura;
+    }
+
+    abstract function calcularArea(): float;
 }
 
 ?>
